@@ -1,0 +1,62 @@
+/* Base Styles */
+:root {
+    --primary: #2196F3;
+    --background: #ffffff;
+    --text: #333333;
+    --border: #e0e0e0;
+}
+
+.dark-theme {
+    --primary: #BB86FC;
+    --background: #121212;
+    --text: #ffffff;
+    --border: #3700B3;
+}
+
+/* Layout */
+.stApp {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.movie-card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.poster-image {
+    border-radius: 8px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.movie-info {
+    padding: 0.5rem;
+}
+
+/* Header */
+.header-section {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(45deg, var(--primary), #1976D2);
+    color: white;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Detail Section */
+.streamlit-expanderHeader {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-radius: 8px;
+}
